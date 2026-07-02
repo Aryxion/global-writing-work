@@ -492,6 +492,123 @@ input[type="range"] { -webkit-appearance: none; appearance: none; }
     margin-bottom: 32px;
 }
 
+/* --- OPPORTUNITY CARD (Hero Info Box) --- */
+.opportunity-card {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(99, 102, 241, 0.18);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 28px;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+}
+
+.opp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--brand-700);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+}
+
+.opp-features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.opp-feature-sep {
+    color: var(--n-300);
+    font-weight: 400;
+}
+
+.opp-feature {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.opp-urgent {
+    color: #b45309;
+}
+
+.opp-apply-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--brand-600);
+    margin-bottom: 16px;
+}
+
+.pulse-icon {
+    display: inline-block;
+    animation: emojiPulse 1.5s infinite;
+}
+
+.down-arrow {
+    display: inline-block;
+    animation: arrowBounce 1s infinite alternate;
+}
+
+.opportunity-card .hero-p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@keyframes emojiPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.18); }
+}
+
+@keyframes arrowBounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(3px); }
+}
+
+@media (max-width: 960px) {
+    .opportunity-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .opportunity-card {
+        padding: 16px;
+    }
+    .opp-features {
+        gap: 6px;
+        font-size: 0.8rem;
+    }
+    .opp-feature-sep {
+        display: none;
+    }
+    .opp-feature {
+        background: var(--n-100);
+        padding: 4px 8px;
+        border-radius: var(--radius-sm);
+    }
+}
+
+
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
 
 .hero-proof-strip { display: flex; align-items: center; gap: 14px; }
