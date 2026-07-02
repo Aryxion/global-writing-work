@@ -25,14 +25,14 @@
     const stickyCTA     = $('#mobile-sticky-cta');
 
     // =========================================================
+    // =========================================================
     // CONFIG
     // =========================================================
-    const RATE = 233;
     const TIERS = [
-        { name: 'Starter Pack',   pages:  50, days:  5, deposit: 501, key: 'GFL-START-50P' },
-        { name: 'Standard Track', pages:  90, days:  8, deposit: 501, key: 'GFL-STD-90P' },
-        { name: 'Pro Writer',     pages: 120, days: 10, deposit: 501, key: 'GFL-PRO-120P' },
-        { name: 'Elite Volume',   pages: 200, days: 15, deposit: 501, key: 'GFL-ELITE-200P' },
+        { name: 'Project 1', pages: 50,  days: 7,  deposit: 501, key: 'GFL-PROJ1-50P',  payout: 15000, desc: '50 Pages (100 Front & Back)' },
+        { name: 'Project 2', pages: 90,  days: 10, deposit: 501, key: 'GFL-PROJ2-90P',  payout: 25000, desc: '90 Pages (180 Front & Back)' },
+        { name: 'Project 3', pages: 120, days: 15, deposit: 501, key: 'GFL-PROJ3-120P', payout: 30000, desc: '120 Pages (240 Front & Back)' },
+        { name: 'Project 4', pages: 190, days: 26, deposit: 501, key: 'GFL-PROJ4-190P', payout: 35000, desc: '190 Pages (380 Front & Back)' },
     ];
 
     const SRC_LINES = [
@@ -65,7 +65,6 @@
         const y = window.scrollY;
         header.classList.toggle('scrolled', y > 40);
 
-        // Show sticky CTA after scrolling past hero
         if (stickyCTA) {
             stickyCTA.classList.toggle('visible', y > heroBottom - 200);
         }
@@ -88,7 +87,6 @@
         });
     });
 
-    // Close on backdrop tap
     mobileMenu.addEventListener('click', e => {
         if (e.target === mobileMenu) {
             mobileMenu.classList.remove('open');
@@ -100,45 +98,44 @@
     // =========================================================
     // 3. EARNINGS CALCULATOR
     // =========================================================
-    function selectTier(dailyPages) {
-        const total = dailyPages * 5;
-        if (total <= 50)  return TIERS[0];
-        if (total <= 90)  return TIERS[1];
-        if (total <= 120) return TIERS[2];
-        return TIERS[3];
+    function selectTier(sliderVal) {
+        const idx = clamp(sliderVal - 1, 0, 3);
+        return TIERS[idx];
     }
 
     function updateCalc() {
-        const daily = parseInt(pagesSlider.value, 10);
-        const tier = selectTier(daily);
-        const dailyEarn  = daily * RATE;
-        const weeklyEarn = daily * 7 * RATE;
-        const monthlyEarn = daily * 30 * RATE;
+        const val = parseInt(pagesSlider.value, 10);
+        const tier = selectTier(val);
 
-        pagesVal.textContent = daily + (daily === 1 ? ' Page' : ' Pages');
+        pagesVal.textContent = 'Project ' + val;
         $('#tier-name').textContent = tier.name;
-        $('#tier-pages').textContent = tier.pages + ' Pages';
+        $('#tier-pages').textContent = tier.desc;
         $('#tier-deadline').textContent = tier.days + ' Days';
 
-        const maxMonthly = 25 * 30 * RATE;
-        const dailyPct   = clamp((dailyEarn / maxMonthly) * 100, 5, 100);
-        const weeklyPct  = clamp((weeklyEarn / maxMonthly) * 100, 5, 100);
-        const monthlyPct = clamp((monthlyEarn / maxMonthly) * 100, 5, 100);
+        const maxPayout = 35000;
+        const depositPct = (501 / maxPayout) * 100;
+        const payoutPct = (tier.payout / maxPayout) * 100;
 
-        $('#bar-daily').style.height   = dailyPct + '%';
-        $('#bar-weekly').style.height  = weeklyPct + '%';
-        $('#bar-monthly').style.height = monthlyPct + '%';
+        $('#bar-daily').style.height   = clamp(depositPct * 3, 10, 100) + '%';
+        $('#bar-weekly').style.height  = clamp(payoutPct, 15, 100) + '%';
+        $('#bar-monthly').style.height = '100%';
 
-        $('#bar-daily-val').textContent   = fmt(dailyEarn);
-        $('#bar-weekly-val').textContent  = fmt(weeklyEarn);
-        $('#bar-monthly-val').textContent = fmt(monthlyEarn);
+        $('#bar-daily-val').textContent   = fmt(501);
+        $('#bar-weekly-val').textContent  = fmt(tier.payout);
+        $('#bar-monthly-val').textContent = fmt(maxPayout);
 
-        $('#daily-calc').textContent   = fmt(dailyEarn);
-        $('#weekly-calc').textContent  = fmt(weeklyEarn);
-        $('#monthly-calc').textContent = fmt(monthlyEarn);
+        const labels = $$('.payout-card .pc-label');
+        if (labels.length >= 3) {
+            labels[0].textContent = 'Refundable Deposit';
+            labels[1].textContent = 'Project Duration';
+            labels[2].textContent = 'Guaranteed Payout';
+        }
 
-        // Capacity bar
-        const cap = clamp(rand(15, 40 + daily * 2), 15, 92);
+        $('#daily-calc').textContent   = fmt(501);
+        $('#weekly-calc').textContent  = tier.days + ' Days';
+        $('#monthly-calc').textContent = fmt(tier.payout);
+
+        const cap = clamp(rand(20, 45 + val * 10), 15, 95);
         $('#cap-fill').style.width = cap + '%';
         $('#cap-text').textContent = cap + '% slots filled';
 
@@ -147,6 +144,16 @@
 
     pagesSlider.addEventListener('input', updateCalc);
     updateCalc();
+
+    // Select project directly from cards grid
+    $$('.btn-apply-project').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const idx = parseInt(btn.dataset.projectIdx, 10);
+            const tier = TIERS[idx];
+            window.__selectedTier = tier;
+            openModal();
+        });
+    });
 
     // =========================================================
     // 4. APPLICATION MODAL
