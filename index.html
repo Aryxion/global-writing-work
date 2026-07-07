@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Global Freelancer Pvt Ltd | Premium Handwriting & Transcription Portal</title>
-    <meta name="description" content="India's most trusted WFH transcription platform. Earn ₹15,000–₹35,000 monthly writing from home. Weekly verified UPI payouts. Join 50,000+ active writers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Writing Home Jobs India | Premium Handwriting & Transcription Portal</title>
+    <meta name="description" content="India's most trusted WFH transcription platform. Earn ₹15,000–₹35,000 monthly writing from home. Weekly verified UPI payouts.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
@@ -19,58 +19,334 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('set', 'autoConfig', false, '2473356813411477');
-    fbq('init', '2473356813411477');
+    fbq('init', '4494870130756430');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2473356813411477&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=4494870130756430&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+        main {
+            width: 100%;
+            z-index: 10;
+        }
+        .hero {
+            padding: 3rem 1rem !important;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            min-height: auto !important;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            pointer-events: none;
+            display: block !important;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(140px);
+            opacity: 0.55;
+        }
+        .orb-1 {
+            top: -20%;
+            left: -10%;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, #e0e7ff 0%, transparent 70%);
+            animation: float-1 25s infinite alternate ease-in-out;
+        }
+        .orb-2 {
+            bottom: -20%;
+            right: -10%;
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, #ccfbf1 0%, transparent 70%);
+            animation: float-2 30s infinite alternate ease-in-out;
+        }
+        .orb-3 {
+            top: 30%;
+            left: 60%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #fce7f3 0%, transparent 70%);
+            animation: float-3 18s infinite alternate ease-in-out;
+        }
+        .dot-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.9;
+        }
+        
+        @keyframes float-1 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(80px, 50px) scale(1.15); }
+        }
+        @keyframes float-2 {
+            0% { transform: translate(0, 0) scale(1.1); }
+            100% { transform: translate(-60px, -70px) scale(0.85); }
+        }
+        @keyframes float-3 {
+            0% { transform: translate(0, 0) scale(0.9); }
+            100% { transform: translate(-40px, -30px) scale(1.15); }
+        }
+
+        .hero-grid {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100%;
+        }
+        .hero-content {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            padding: 48px;
+            border-radius: 28px;
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.08), 
+                        0 0 50px rgba(99, 102, 241, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            max-width: 550px;
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+        }
+        .hero-content:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.12), 
+                        0 0 60px rgba(99, 102, 241, 0.08);
+        }
+        
+        /* Glowing Card outline */
+        .hero-content::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 28px;
+            padding: 1.5px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(6, 182, 212, 0.2) 50%, rgba(236, 72, 153, 0.15) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.06);
+            color: #065f46;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(16, 185, 129, 0.15);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.02);
+        }
+        .eyebrow-dot {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #10b981;
+            animation: pulse-dot 2s infinite;
+        }
+        
+        .hero-h1 {
+            font-size: 2.85rem;
+            line-height: 1.25;
+            color: #0f172a;
+            margin: 0 0 24px 0;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #3b82f6 50%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+        }
+        
+        .opportunity-card {
+            background: rgba(0, 0, 0, 0.015);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+        .opp-header {
+            margin-bottom: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .opp-badge {
+            color: #d97706;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .opp-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 18px;
+            font-size: 0.9rem;
+            color: #334155;
+            align-items: center;
+            font-weight: 500;
+        }
+        .opp-feature {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 8px 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+        }
+        .opp-feature:hover {
+            transform: translateY(-2px);
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+        }
+        .opp-feature:nth-of-type(1) { border-color: rgba(6, 182, 212, 0.2); color: #0891b2; }
+        .opp-feature:nth-of-type(3) { border-color: rgba(168, 85, 247, 0.2); color: #7c3aed; }
+        .opp-feature.opp-urgent {
+            border-color: rgba(244, 63, 94, 0.3);
+            color: #e11d48;
+            background: rgba(244, 63, 94, 0.02);
+            animation: pulse-urgent 1.5s infinite alternate ease-in-out;
+        }
+        .opp-feature-sep {
+            display: none;
+        }
+        .opp-apply-bar {
+            font-weight: 800;
+            color: #e11d48;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .hero-p {
+            color: #475569;
+            font-size: 0.98rem;
+            line-height: 1.6;
+            margin: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            padding-top: 18px;
+        }
+        
+        .btn-primary.btn-lg {
+            background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #06b6d4 100%);
+            color: white;
+            border: none;
+            border-radius: 16px;
+            padding: 20px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px -5px rgba(6, 182, 212, 0.35),
+                        0 0 20px rgba(99, 102, 241, 0.1);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .btn-primary.btn-lg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.35), transparent);
+            transform: skewX(-25deg);
+            transition: 0.75s;
+        }
+        .btn-primary.btn-lg:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px -10px rgba(6, 182, 212, 0.45),
+                        0 0 35px rgba(99, 102, 241, 0.2);
+        }
+        .btn-primary.btn-lg:hover::after {
+            left: 125%;
+        }
+        .btn-primary.btn-lg svg {
+            transition: transform 0.3s ease;
+        }
+        .btn-primary.btn-lg:hover svg {
+            transform: translateX(6px);
+        }
+
+        @keyframes pulse-dot {
+            0% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1.2); opacity: 0.8; box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+            100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        
+        @keyframes pulse-urgent {
+            0% { opacity: 0.75; transform: translateY(0); }
+            100% { opacity: 1; transform: translateY(-1px); }
+        }
+        
+        @media(max-width: 580px) {
+            .hero-content {
+                padding: 36px 24px;
+            }
+            .hero-h1 {
+                font-size: 2.35rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Floating Navigation -->
-    <header id="main-header">
-        <nav class="floating-nav">
-            <a href="#" class="nav-logo">
-                <div class="logo-mark">GF</div>
-                <div class="logo-name">Global Freelancer</div>
-            </a>
-            <div class="nav-links" id="nav-links">
-                <a href="#projects">Projects</a>
-                <a href="#workspace">Calculator</a>
-                <a href="#how-it-works">Process</a>
-                <a href="#proof">Live Feed</a>
-                <a href="#faq">FAQs</a>
-            </div>
-            <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="nav-cta" onclick="if(window.fbq)fbq('track', 'Lead');">
-                <span>Apply Now</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </nav>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-inner">
-            <a href="#projects" class="mobile-link">📚 Projects</a>
-            <a href="#workspace" class="mobile-link">💰 Calculator</a>
-            <a href="#how-it-works" class="mobile-link">⚙️ Process</a>
-            <a href="#proof" class="mobile-link">📡 Live Feed</a>
-            <a href="#faq" class="mobile-link">❓ FAQs</a>
-            <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="mobile-cta" onclick="if(window.fbq)fbq('track', 'Lead');">
-                <span>Apply Now on Telegram</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </a>
-        </div>
-    </div>
-
     <main>
-
         <!-- HERO -->
         <section class="hero">
             <div class="hero-bg">
@@ -106,669 +382,14 @@
                         <p class="hero-p">Copy assigned digital manuscripts onto physical pages. No experience needed. Direct UPI settlements every Saturday — guaranteed.</p>
                     </div>
                     <div class="hero-actions">
-                        <a href="#workspace" class="btn-primary btn-lg">
-                            <span>Calculate My Earnings</span>
+                        <a href="https://t.me/+l4kS3K4CLtUyNGE1" target="_blank" rel="noopener" class="btn-primary btn-lg" style="width: 100%; justify-content: center;" onclick="if(window.fbq)fbq('track', 'Lead');">
+                            <span>Join Telegram</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
-                        <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="btn-outline btn-lg" onclick="if(window.fbq)fbq('track', 'Lead');">Join Telegram</a>
-                    </div>
-                    <div class="hero-proof-strip">
-                        <div class="proof-avatars">
-                            <div class="avatar" style="--av:#6366f1;">R</div>
-                            <div class="avatar" style="--av:#0ea5e9;">P</div>
-                            <div class="avatar" style="--av:#10b981;">A</div>
-                            <div class="avatar" style="--av:#f59e0b;">S</div>
-                            <div class="avatar" style="--av:#ec4899;">N</div>
-                        </div>
-                        <div class="proof-text"><strong>50,000+</strong> writers · <strong>4.9★</strong> rating</div>
-                    </div>
-                </div>
-
-                <div class="hero-visual">
-                    <div class="visual-card glow-card">
-                        <div class="card-chrome">
-                            <span class="chrome-dot r"></span>
-                            <span class="chrome-dot y"></span>
-                            <span class="chrome-dot g"></span>
-                            <span class="chrome-label">live_transcription.session</span>
-                        </div>
-                        <div class="card-split">
-                            <div class="split-left">
-                                <div class="split-tag">SOURCE PDF</div>
-                                <div class="source-lines">
-                                    <div class="src-line" data-line="1">The digitization project requires</div>
-                                    <div class="src-line" data-line="2">writing legibly in standard notebooks</div>
-                                    <div class="src-line" data-line="3">with one-inch margins on both sides.</div>
-                                    <div class="src-line" data-line="4">Use blue or black gel pens only.</div>
-                                    <div class="src-line" data-line="5">Submit high-resolution photo scans.</div>
-                                </div>
-                            </div>
-                            <div class="split-right">
-                                <div class="split-tag">YOUR NOTEBOOK</div>
-                                <div class="notebook-area">
-                                    <p class="hw-output" id="hw-output"></p>
-                                    <span class="typing-cursor"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-status-bar">
-                            <div class="status-left"><span class="pulse-dot"></span><span>Line <span id="current-line-num">1</span>/5</span></div>
-                            <div class="status-right">
-                                <span class="score-label">Legibility</span>
-                                <div class="score-bar"><div class="score-fill" id="score-fill"></div></div>
-                                <span class="score-pct" id="score-pct">0%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Floating badges -->
-                    <div class="float-badge badge-earnings">
-                        <div class="fb-icon">₹</div>
-                        <div class="fb-info"><span class="fb-val">5,825</span><span class="fb-lbl">Weekly payout</span></div>
-                    </div>
-                    <div class="float-badge badge-verified">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                        <span>UPI Verified</span>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- MARQUEE TRUST STRIP -->
-        <section class="marquee-section">
-            <div class="marquee-track">
-                <div class="marquee-content" id="marquee-content">
-                    <span class="mq-item">✅ 50,000+ Active Writers</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">🔒 100% Refundable Deposit</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">💳 Weekly UPI Payouts</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">⭐ 4.9 Star Rating</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">📄 ₹233 Per Page Rate</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">🏠 Work From Home</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">⚡ Start Within 24 Hours</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">🔐 256-bit Encrypted</span>
-                    <span class="mq-divider">◆</span>
-                    <!-- Duplicated for seamless loop -->
-                    <span class="mq-item">✅ 50,000+ Active Writers</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">🔒 100% Refundable Deposit</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">💳 Weekly UPI Payouts</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">⭐ 4.9 Star Rating</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">📄 ₹233 Per Page Rate</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">🏠 Work From Home</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">⚡ Start Within 24 Hours</span>
-                    <span class="mq-divider">◆</span>
-                    <span class="mq-item">🔐 256-bit Encrypted</span>
-                    <span class="mq-divider">◆</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- STATS -->
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-row">
-                    <div class="stat-block reveal">
-                        <div class="stat-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-                        <span class="stat-num" data-target="15000">0</span>
-                        <span class="stat-label">Pages Completed</span>
-                    </div>
-                    <div class="stat-block reveal">
-                        <div class="stat-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
-                        <span class="stat-num">₹233</span>
-                        <span class="stat-label">Per Page Rate</span>
-                    </div>
-                    <div class="stat-block reveal">
-                        <div class="stat-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-                        <span class="stat-num">100%</span>
-                        <span class="stat-label">Deposit Refunded</span>
-                    </div>
-                    <div class="stat-block reveal">
-                        <div class="stat-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                        <span class="stat-num">4.9★</span>
-                        <span class="stat-label">Writer Rating</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section class="projects-section" id="projects">
-            <div class="container">
-                <div class="sec-header reveal">
-                    <div class="sec-badge">📚 Book Handwriting Projects</div>
-                    <h2 class="sec-title">Choose Your Plan &amp;<br class="mobile-br"> Start Earning.</h2>
-                    <p class="sec-desc">Select the handwriting project size that matches your writing speed. Earn guaranteed payouts with standard guidelines.</p>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card-v2 glow-card reveal">
-                        <div class="p-card-header">
-                            <span class="p-card-title">Project 1</span>
-                            <span class="p-card-popular-badge">Starter Pack</span>
-                        </div>
-                        <div class="p-card-body">
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Volume</span>
-                                <span class="p-metric-value">50 Pages <small>(100 Front &amp; Back)</small></span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Duration</span>
-                                <span class="p-metric-value">7 Days</span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Refundable Deposit</span>
-                                <span class="p-metric-value text-green">₹501</span>
-                            </div>
-                            <div class="p-card-divider"></div>
-                            <div class="p-payout-section">
-                                <span class="p-payout-label">Guaranteed Payout</span>
-                                <span class="p-payout-value">₹15,000</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary btn-block btn-apply-project" data-project-idx="0">
-                            <span>Select Project 1</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </button>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card-v2 glow-card reveal">
-                        <div class="p-card-header">
-                            <span class="p-card-title">Project 2</span>
-                            <span class="p-card-popular-badge popular">Popular Choice</span>
-                        </div>
-                        <div class="p-card-body">
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Volume</span>
-                                <span class="p-metric-value">90 Pages <small>(180 Front &amp; Back)</small></span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Duration</span>
-                                <span class="p-metric-value">10 Days</span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Refundable Deposit</span>
-                                <span class="p-metric-value text-green">₹501</span>
-                            </div>
-                            <div class="p-card-divider"></div>
-                            <div class="p-payout-section">
-                                <span class="p-payout-label">Guaranteed Payout</span>
-                                <span class="p-payout-value">₹25,000</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary btn-block btn-apply-project" data-project-idx="1">
-                            <span>Select Project 2</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </button>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card-v2 glow-card reveal">
-                        <div class="p-card-header">
-                            <span class="p-card-title">Project 3</span>
-                            <span class="p-card-popular-badge">Advanced Track</span>
-                        </div>
-                        <div class="p-card-body">
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Volume</span>
-                                <span class="p-metric-value">120 Pages <small>(240 Front &amp; Back)</small></span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Duration</span>
-                                <span class="p-metric-value">15 Days</span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Refundable Deposit</span>
-                                <span class="p-metric-value text-green">₹501</span>
-                            </div>
-                            <div class="p-card-divider"></div>
-                            <div class="p-payout-section">
-                                <span class="p-payout-label">Guaranteed Payout</span>
-                                <span class="p-payout-value">₹30,000</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary btn-block btn-apply-project" data-project-idx="2">
-                            <span>Select Project 3</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </button>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card-v2 glow-card reveal">
-                        <div class="p-card-header">
-                            <span class="p-card-title">Project 4</span>
-                            <span class="p-card-popular-badge elite">Elite Volume</span>
-                        </div>
-                        <div class="p-card-body">
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Volume</span>
-                                <span class="p-metric-value">190 Pages <small>(380 Front &amp; Back)</small></span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Duration</span>
-                                <span class="p-metric-value">26 Days</span>
-                            </div>
-                            <div class="p-metric-row">
-                                <span class="p-metric-label">Refundable Deposit</span>
-                                <span class="p-metric-value text-green">₹501</span>
-                            </div>
-                            <div class="p-card-divider"></div>
-                            <div class="p-payout-section">
-                                <span class="p-payout-label">Guaranteed Payout</span>
-                                <span class="p-payout-value">₹35,000</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary btn-block btn-apply-project" data-project-idx="3">
-                            <span>Select Project 4</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="projects-footer reveal">
-                    <p>✨ Choose Your Project / Plan and Start E@rning from Home</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- EARNINGS WORKSPACE -->
-        <section class="workspace" id="workspace">
-            <div class="container">
-                <div class="sec-header reveal">
-                    <div class="sec-badge">💰 Earnings Dashboard</div>
-                    <h2 class="sec-title">Plan your income<br class="mobile-br"> in real time.</h2>
-                    <p class="sec-desc">Adjust the slider to switch between plans and view the payout metrics dynamically.</p>
-                </div>
-
-                <div class="workspace-grid">
-                    <div class="ws-controls reveal">
-                        <div class="slider-section glow-card">
-                            <div class="slider-top">
-                                <label class="slider-label" for="pages-slider">Selected Plan</label>
-                                <div class="slider-badge" id="pages-val">Project 1</div>
-                            </div>
-                            <input type="range" id="pages-slider" min="1" max="4" value="1" step="1">
-                            <div class="slider-range-labels">
-                                <span>Project 1</span>
-                                <span>Project 4</span>
-                            </div>
-                        </div>
-
-                        <div class="tier-display glow-card">
-                            <div class="tier-head">
-                                <span class="tier-label">Auto-Selected Package</span>
-                                <span class="tier-name" id="tier-name">Starter Pack</span>
-                            </div>
-                            <div class="tier-specs">
-                                <div class="spec-row"><span>Volume</span><span id="tier-pages">50 Pages (100 Front &amp; Back)</span></div>
-                                <div class="spec-row"><span>Duration</span><span id="tier-deadline">7 Days</span></div>
-                                <div class="spec-row"><span>Refundable Deposit</span><span class="text-green">₹501</span></div>
-                            </div>
-                            <div class="tier-capacity">
-                                <div class="cap-track"><div class="cap-fill" id="cap-fill" style="width:25%"></div></div>
-                                <span class="cap-text" id="cap-text">25% slots filled</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ws-results reveal">
-                        <div class="chart-area glow-card">
-                            <div class="chart-title">Payout Forecast</div>
-                            <div class="chart-bars">
-                                <div class="bar-group">
-                                    <div class="bar-value" id="bar-daily-val">₹1,165</div>
-                                    <div class="bar-track"><div class="bar-fill" id="bar-daily" style="height:15%"></div></div>
-                                    <span class="bar-label">Daily</span>
-                                </div>
-                                <div class="bar-group">
-                                    <div class="bar-value" id="bar-weekly-val">₹8,155</div>
-                                    <div class="bar-track"><div class="bar-fill bar-accent" id="bar-weekly" style="height:45%"></div></div>
-                                    <span class="bar-label">Weekly</span>
-                                </div>
-                                <div class="bar-group">
-                                    <div class="bar-value" id="bar-monthly-val">₹34,950</div>
-                                    <div class="bar-track"><div class="bar-fill bar-highlight" id="bar-monthly" style="height:80%"></div></div>
-                                    <span class="bar-label">Monthly</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="payout-cards">
-                            <div class="payout-card">
-                                <span class="pc-label">Daily</span>
-                                <span class="pc-value" id="daily-calc">₹1,165</span>
-                            </div>
-                            <div class="payout-card">
-                                <span class="pc-label">Weekly</span>
-                                <span class="pc-value" id="weekly-calc">₹8,155</span>
-                            </div>
-                            <div class="payout-card pc-primary">
-                                <span class="pc-label">Monthly Estimated</span>
-                                <span class="pc-value" id="monthly-calc">₹34,950</span>
-                                <span class="pc-tag">✓ Guaranteed Rate</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary btn-block" id="btn-apply">
-                            <span>Register This Writing Slot</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOW IT WORKS -->
-        <section class="process-section" id="how-it-works">
-            <div class="container">
-                <div class="sec-header reveal">
-                    <div class="sec-badge">⚙️ Workflow</div>
-                    <h2 class="sec-title">Four steps to<br class="mobile-br"> your first payout.</h2>
-                    <p class="sec-desc">We've streamlined the entire process so you can start writing and earning within 24 hours.</p>
-                </div>
-                <div class="process-timeline">
-                    <div class="timeline-line"></div>
-                    <div class="process-card reveal">
-                        <div class="pc-marker"><span>01</span></div>
-                        <div class="pc-body glow-card">
-                            <h3>Choose a Package</h3>
-                            <p>Pick a project tier from the Earnings Dashboard. Copy your auto-generated application key.</p>
-                        </div>
-                    </div>
-                    <div class="process-card reveal">
-                        <div class="pc-marker"><span>02</span></div>
-                        <div class="pc-body glow-card">
-                            <h3>Join via Telegram</h3>
-                            <p>Message the copied key to our verified Telegram coordinator. They will assign your PDF draft pack.</p>
-                        </div>
-                    </div>
-                    <div class="process-card reveal">
-                        <div class="pc-marker"><span>03</span></div>
-                        <div class="pc-body glow-card">
-                            <h3>Write &amp; Upload</h3>
-                            <p>Transcribe the digital text onto paper using standard pens. Scan pages with any free scanner app.</p>
-                        </div>
-                    </div>
-                    <div class="process-card reveal">
-                        <div class="pc-marker"><span>04</span></div>
-                        <div class="pc-body glow-card">
-                            <h3>Get Paid Weekly</h3>
-                            <p>Our QC team verifies your scans. Approved pages are settled to your UPI / bank every Saturday.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WHY US -->
-        <section class="pillars-section">
-            <div class="container">
-                <div class="sec-header reveal">
-                    <div class="sec-badge">🛡️ Why Us</div>
-                    <h2 class="sec-title">Built on trust,<br class="mobile-br"> transparency &amp; flexibility.</h2>
-                </div>
-                <div class="pillars-grid">
-                    <div class="pillar-card glow-card reveal">
-                        <div class="pillar-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-                        </div>
-                        <h3>Zero-Risk Security Deposit</h3>
-                        <p>The ₹501 registration fee is a spam-prevention control. It is refunded in full — automatically credited with your very first project payout.</p>
-                    </div>
-                    <div class="pillar-card glow-card reveal">
-                        <div class="pillar-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <h3>Self-Paced Scheduling</h3>
-                        <p>No fixed shifts, no office hours. Write in the morning, afternoon, or late evening — whatever fits your college, career, or family schedule.</p>
-                    </div>
-                    <div class="pillar-card glow-card reveal">
-                        <div class="pillar-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-                        </div>
-                        <h3>Automatic UPI Settlements</h3>
-                        <p>Verified pages are processed for direct payments via GPay, PhonePe, Paytm, or IMPS bank transfer every Saturday afternoon.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS -->
-        <section class="testimonials-section">
-            <div class="container">
-                <div class="sec-header reveal">
-                    <div class="sec-badge">💬 Writer Stories</div>
-                    <h2 class="sec-title">Trusted by thousands<br class="mobile-br"> across India.</h2>
-                </div>
-                <div class="testimonials-slider" id="testimonials-slider">
-                    <div class="testimonial-card glow-card">
-                        <div class="tc-stars">★★★★★</div>
-                        <p class="tc-quote">"I started as a college student needing extra income. Within my first week, I received ₹8,155 directly to my UPI. The process is incredibly simple."</p>
-                        <div class="tc-author">
-                            <div class="tc-avatar" style="--av:#6366f1;">R</div>
-                            <div class="tc-info"><strong>Riya Sharma</strong><span>Delhi · Writer since 2024</span></div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card glow-card">
-                        <div class="tc-stars">★★★★★</div>
-                        <p class="tc-quote">"As a homemaker, this is perfect. I write 8-10 pages daily after household work. The weekly Saturday payment is always on time — never missed once."</p>
-                        <div class="tc-author">
-                            <div class="tc-avatar" style="--av:#10b981;">P</div>
-                            <div class="tc-info"><strong>Pooja Verma</strong><span>Jaipur · Writer since 2023</span></div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card glow-card">
-                        <div class="tc-stars">★★★★★</div>
-                        <p class="tc-quote">"I was skeptical about the deposit, but it was genuinely refunded with my first payout. Now I earn ₹25,000+ monthly consistently writing just 3 hours a day."</p>
-                        <div class="tc-author">
-                            <div class="tc-avatar" style="--av:#f59e0b;">A</div>
-                            <div class="tc-info"><strong>Ankit Patel</strong><span>Ahmedabad · Writer since 2024</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-dots" id="slider-dots">
-                    <button class="dot active" data-idx="0"></button>
-                    <button class="dot" data-idx="1"></button>
-                    <button class="dot" data-idx="2"></button>
-                </div>
-            </div>
-        </section>
-
-        <!-- LIVE FEED -->
-        <section class="feed-section" id="proof">
-            <div class="container">
-                <div class="sec-header reveal">
-                    <div class="sec-badge">📡 Live Activity</div>
-                    <h2 class="sec-title">Real-time verification<br class="mobile-br"> pipeline.</h2>
-                    <p class="sec-desc">Watch as writers across India submit pages and receive verified payouts — updated every few seconds.</p>
-                </div>
-                <div class="feed-card glow-card reveal">
-                    <div class="feed-top">
-                        <div class="feed-live"><span class="pulse-dot"></span><span>Live Feed</span></div>
-                        <span class="feed-count">Verified entries only</span>
-                    </div>
-                    <div class="feed-list" id="feed-list">
-                        <div class="feed-item">
-                            <span class="fi-time">Just now</span>
-                            <span class="fi-id">#GF-4809</span>
-                            <span class="fi-desc">50 Pages · Starter Pack</span>
-                            <span class="fi-status fi-settled">₹11,650 Settled</span>
-                        </div>
-                        <div class="feed-item">
-                            <span class="fi-time">2m ago</span>
-                            <span class="fi-id">#GF-7221</span>
-                            <span class="fi-desc">120 Pages · Pro Writer</span>
-                            <span class="fi-status fi-approved">✓ Approved</span>
-                        </div>
-                        <div class="feed-item">
-                            <span class="fi-time">5m ago</span>
-                            <span class="fi-id">#GF-3190</span>
-                            <span class="fi-desc">90 Pages · Standard Track</span>
-                            <span class="fi-status fi-settled">₹20,970 Settled</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="faq-section" id="faq">
-            <div class="container faq-layout">
-                <div class="faq-left reveal">
-                    <div class="sec-badge">❓ Support</div>
-                    <h2 class="sec-title faq-title">Questions?<br>We've got answers.</h2>
-                    <p class="sec-desc">Can't find what you need? Message our verified coordinator directly on Telegram.</p>
-                    <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="btn-dark btn-lg" onclick="if(window.fbq)fbq('track', 'Lead');">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        <span>Open Telegram Support</span>
-                    </a>
-                </div>
-                <div class="faq-right reveal">
-                    <div class="faq-item">
-                        <button class="faq-q" aria-expanded="false">
-                            <span>How do I get started?</span>
-                            <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
-                        </button>
-                        <div class="faq-a"><p>Click "Register This Writing Slot" in the Earnings Dashboard, copy your application key, and send it to our Telegram coordinator. You'll receive your PDF assignment pack within hours.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-q" aria-expanded="false">
-                            <span>Why is there a ₹501 registration deposit?</span>
-                            <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
-                        </button>
-                        <div class="faq-a"><p>It prevents spam applications and reserves writing materials for serious candidates. The entire ₹501 is automatically refunded to your bank account along with your first project payout — no exceptions.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-q" aria-expanded="false">
-                            <span>When and how do I receive payments?</span>
-                            <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
-                        </button>
-                        <div class="faq-a"><p>Every Saturday afternoon. Our team reviews your uploaded scans for legibility and margins. All approved pages are settled directly to your UPI ID (GPay, PhonePe, Paytm) or bank account via IMPS.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-q" aria-expanded="false">
-                            <span>What if I miss a deadline or make mistakes?</span>
-                            <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
-                        </button>
-                        <div class="faq-a"><p>We offer flexible terms. Notify your coordinator 24 hours in advance for deadline extensions. Minor corrections are acceptable as long as overall legibility standards are maintained.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FINAL CTA -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-card reveal">
-                    <div class="cta-bg">
-                        <div class="orb orb-cta-1"></div>
-                        <div class="orb orb-cta-2"></div>
-                    </div>
-                    <h2>Ready to start earning?</h2>
-                    <p>Join thousands of writers across India who earn ₹15K–₹35K monthly from home. Your first payout is just days away.</p>
-                    <div class="cta-actions">
-                        <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="btn-white btn-lg" onclick="if(window.fbq)fbq('track', 'Lead');">
-                            <span>Apply on Telegram</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        </a>
-                        <a href="#workspace" class="btn-ghost btn-lg">Calculate Earnings First</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container footer-inner">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="logo-mark">GF</div>
-                    <div class="footer-brand-text">
-                        <span class="logo-name">Global Freelancer</span>
-                        <span class="footer-tagline">Pvt Ltd · Trusted WFH Platform</span>
-                    </div>
-                </div>
-                <div class="footer-nav">
-                    <a href="#workspace">Earnings</a>
-                    <a href="#how-it-works">Process</a>
-                    <a href="#proof">Live Feed</a>
-                    <a href="#faq">FAQs</a>
-                </div>
-            </div>
-            <div class="footer-shields">
-                <span class="shield">✓ Secure UPI</span>
-                <span class="shield">✓ IMPS Bank Transfers</span>
-                <span class="shield">✓ 256-bit Encrypted</span>
-                <span class="shield">✓ 100% Refundable Deposit</span>
-            </div>
-            <p class="footer-disclaimer"><strong>Disclaimer:</strong> Global Freelancer Pvt Ltd is a crowdsourced transcription coordination platform. The ₹501 registration deposit prevents spam and is fully refunded upon first submission. Only pay through official channels. Earnings depend on volume, quality, and guideline compliance.</p>
-            <p class="footer-copy">&copy; 2026 Global Freelancer Pvt Ltd. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- APPLICATION MODAL -->
-    <div class="modal-overlay" id="modal-overlay">
-        <div class="modal-sheet" id="modal-sheet">
-            <div class="modal-handle"></div>
-            <button class="modal-close" id="modal-close" aria-label="Close">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            </button>
-            <div class="modal-badge" id="modal-badge">Project 1</div>
-            <h3 class="modal-title">Secure Your Writing Slot</h3>
-            <p class="modal-desc">You've selected <strong id="modal-tier-name">Starter Pack</strong>. Complete these 2 steps:</p>
-            <div class="modal-steps">
-                <div class="m-step">
-                    <div class="m-num">1</div>
-                    <div class="m-body">
-                        <strong>Copy your application key</strong>
-                        <div class="copy-widget">
-                            <code class="copy-code" id="copy-code">GFL-APPLY-KEY</code>
-                            <button class="copy-btn" id="copy-btn">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                                <span id="copy-label">Copy</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-step">
-                    <div class="m-num">2</div>
-                    <div class="m-body">
-                        <strong>Send it on Telegram</strong>
-                        <p>Message the key to our coordinator to receive your assignment pack.</p>
-                    </div>
-                </div>
-            </div>
-            <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="btn-primary btn-block modal-action" onclick="if(window.fbq)fbq('track', 'Lead');">
-                <span>Open Telegram &amp; Submit Key</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </a>
-            <div class="modal-secure">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span>₹501 deposit is 100% refundable on first submission.</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mobile sticky CTA -->
-    <div class="mobile-sticky-cta" id="mobile-sticky-cta">
-        <a href="https://t.me/+w0-heV60qhMzZGM1" target="_blank" rel="noopener" class="btn-primary btn-block" onclick="if(window.fbq)fbq('track', 'Lead');">
-            <span>Apply Now — Start Earning</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-    </div>
-
-    <script src="app.js"></script>
 </body>
 </html>
