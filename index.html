@@ -19,11 +19,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '4494870130756430');
+    fbq('init', '3730759477061756');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=4494870130756430&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=3730759477061756&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 
@@ -253,6 +253,25 @@
             box-shadow: 0 2px 8px rgba(99,102,241,0.4);
         }
 
+        a.cta-btn.cta-secondary {
+            background-color: #ffffff;
+            background-image: none;
+            color: #4f46e5;
+            border: 1.5px solid #6366f1;
+            box-shadow: 0 4px 6px -1px rgba(99,102,241,0.05);
+            margin-top: 12px;
+        }
+        a.cta-btn.cta-secondary::after {
+            content: none;
+        }
+        a.cta-btn.cta-secondary:active {
+            background-color: #f5f3ff;
+            border-color: #4f46e5;
+            -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+            box-shadow: none;
+        }
+
         /* ── Trust line ── */
         .trust {
             text-align: center;
@@ -262,17 +281,6 @@
             font-weight: 500;
         }
         .trust span { color: #10b981; }
-
-        /* ── Secondary text link (fallback) ── */
-        .fallback-link {
-            display: block;
-            text-align: center;
-            margin-top: 12px;
-            font-size: 0.82rem;
-            color: #6366f1;
-            text-decoration: underline;
-            font-weight: 600;
-        }
 
         /* ── Responsive ── */
         @media screen and (max-width: 360px) {
@@ -320,14 +328,13 @@
         </div>
 
         <div class="cta-wrap">
-            <a href="https://t.me/+l4kS3K4CLtUyNGE1" class="cta-btn" target="_blank" rel="noopener noreferrer" id="join-telegram-btn" onclick="if(window.fbq)fbq('track','Lead');">
-                Join Telegram  →
+            <a href="https://t.me/+YNM9PWiFdu9hOTc1" class="cta-btn cta-primary" target="_blank" rel="noopener noreferrer" id="join-telegram-btn-1" onclick="if(window.fbq)fbq('track','Lead');">
+                Join Telegram Channel  →
+            </a>
+            <a href="https://t.me/+YNM9PWiFdu9hOTc1" class="cta-btn cta-secondary" target="_blank" rel="noopener noreferrer" id="join-telegram-btn-2" onclick="if(window.fbq)fbq('track','Lead');">
+                Join Backup Channel  →
             </a>
         </div>
-
-        <a href="https://t.me/+l4kS3K4CLtUyNGE1" class="fallback-link" target="_blank" rel="noopener noreferrer" onclick="if(window.fbq)fbq('track','Lead');">
-            Or tap here to join →
-        </a>
 
         <div class="trust">
             <span>✓</span> Verified · Secure · 50,000+ Writers
